@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>筋トレクイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>筋トレクイズ</h1>
+
+    <!-- ✅ 説明エリア -->
+    <div id="intro">
+      <p>全10問の筋トレに関する4択クイズです。<br>
+      各問題に答えて、どれだけ正解できるか挑戦してみましょう！💪<br>
+      <small>※選択肢は1回選んでも変更できます。</small></p>
+      <button id="start">スタート</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+      <div class="progress">
+        <div id="bar"></div>
+      </div>
+      <p id="qcount"></p>
+      <h2 id="question"></h2>
+      <ul id="choices"></ul>
+      <button id="next">次へ</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>結果</h2>
+      <p id="score"></p>
+      <div id="detail"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
